@@ -2,3219 +2,896 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-  >
-
-  <meta
-    name="theme-color"
-    content="#8a3155"
-  >
-
-  <meta
-    name="description"
-    content="Preety Creations - Handmade Jewellery, customized designs and colors, affordable and unique."
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Preety Creations | Handmade Jewellery</title>
 
+  <meta name="description"
+    content="Preety Creations - Handmade jewellery, customized designs and unique earrings made with love.">
 
-  <style>
-
-    * {
-      box-sizing: border-box;
-    }
-
-
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      min-height: 100%;
-    }
-
-
-    body {
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      background:
-        radial-gradient(
-          circle at top,
-          #fffaf7 0%,
-          #f8edf1 48%,
-          #f0e0e7 100%
-        );
-
-      color: #3b2730;
-
-      padding-bottom: 105px;
-
-    }
-
-
-    /* =========================================================
-       PAGE
-    ========================================================= */
-
-    .page {
-
-      width: 100%;
-
-      max-width: 900px;
-
-      margin: auto;
-
-      padding:
-        12px
-        12px
-        115px;
-
-    }
-
-
-    /* =========================================================
-       HEADER / HERO
-    ========================================================= */
-
-    .card {
-
-      background:
-        rgba(
-          255,
-          255,
-          255,
-          0.97
-        );
-
-      border-radius: 22px;
-
-      padding:
-        24px
-        16px;
-
-      text-align: center;
-
-      box-shadow:
-        0 12px 35px
-        rgba(
-          91,
-          23,
-          56,
-          0.12
-        );
-
-      border:
-        1px solid
-        rgba(
-          155,
-          45,
-          98,
-          0.12
-        );
-
-      position: relative;
-
-      overflow: hidden;
-
-      margin-bottom: 16px;
-
-    }
-
-
-    .card::before {
-
-      content: "";
-
-      position: absolute;
-
-      top: 0;
-      left: 0;
-
-      width: 100%;
-      height: 4px;
-
-      background:
-        linear-gradient(
-          90deg,
-          #d4a373,
-          #b76e79,
-          #8a3155,
-          #d4a373
-        );
-
-    }
-
-
-    /* =========================================================
-       LOGO
-    ========================================================= */
-
-    .logo {
-
-      width: 105px;
-      height: 105px;
-
-      object-fit: contain;
-
-      display: block;
-
-      margin:
-        0
-        auto
-        5px;
-
-      filter:
-        drop-shadow(
-          0 5px 9px
-          rgba(
-            60,
-            20,
-            40,
-            0.14
-          )
-        );
-
-    }
-
-
-    /* =========================================================
-       BRAND
-    ========================================================= */
-
-    .brand-name {
-
-      margin: 0;
-
-      color: #702744;
-
-      font-size: 27px;
-
-      font-weight: 700;
-
-      letter-spacing: 0.2px;
-
-    }
-
-
-    .tagline {
-
-      margin:
-        6px
-        auto
-        14px;
-
-      max-width: 500px;
-
-      color: #806b74;
-
-      font-size: 13px;
-
-      line-height: 1.5;
-
-    }
-
-
-    /* =========================================================
-       INTRO
-    ========================================================= */
-
-    .hero-message {
-
-      margin:
-        12px
-        auto
-        15px;
-
-      max-width: 620px;
-
-      color: #5f4852;
-
-      font-size: 13px;
-
-      line-height: 1.6;
-
-    }
-
-
-    .hero-title {
-
-      color: #5b1738;
-
-      font-size: 17px;
-
-      font-weight: 700;
-
-      margin-bottom: 5px;
-
-    }
-
-
-    .hero-subtitle {
-
-      color: #806b74;
-
-      font-size: 12px;
-
-      margin: 0;
-
-    }
-
-
-    /* =========================================================
-       INSTAGRAM BUTTON
-    ========================================================= */
-
-    .actions {
-
-      display: flex;
-
-      justify-content: center;
-
-      margin: auto;
-
-    }
-
-
-    .btn {
-
-      min-height: 48px;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      gap: 8px;
-
-      padding:
-        10px
-        20px;
-
-      border-radius: 12px;
-
-      text-decoration: none;
-
-      font-weight: 700;
-
-      font-size: 13px;
-
-      color: white;
-
-      cursor: pointer;
-
-      border: none;
-
-      position: relative;
-
-      overflow: hidden;
-
-      transition:
-        transform 0.22s ease,
-        box-shadow 0.22s ease,
-        filter 0.22s ease;
-
-      -webkit-tap-highlight-color:
-        transparent;
-
-    }
-
-
-    /* Instagram gradient */
-
-    .instagram-btn {
-
-      background:
-        linear-gradient(
-          135deg,
-          #833ab4 0%,
-          #c13584 35%,
-          #e1306c 60%,
-          #fd1d1d 78%,
-          #f77737 90%,
-          #fcaf45 100%
-        );
-
-      box-shadow:
-        0 6px 16px
-        rgba(
-          193,
-          53,
-          132,
-          0.22
-        );
-
-    }
-
-
-    .instagram-btn:hover {
-
-      transform:
-        translateY(-2px)
-        scale(1.02);
-
-      box-shadow:
-        0 9px 23px
-        rgba(
-          193,
-          53,
-          132,
-          0.35
-        );
-
-      filter:
-        brightness(1.06);
-
-    }
-
-
-    .instagram-btn:active {
-
-      transform:
-        translateY(0)
-        scale(0.98);
-
-    }
-
-
-    .btn img {
-
-      width: 20px;
-      height: 20px;
-
-      object-fit: contain;
-
-    }
-
-
-    /* =========================================================
-       FEATURES
-    ========================================================= */
-
-    .features {
-
-      display: flex;
-
-      flex-wrap: wrap;
-
-      justify-content: center;
-
-      gap: 6px;
-
-      margin-top: 14px;
-
-    }
-
-
-    .feature {
-
-      padding:
-        7px
-        10px;
-
-      border-radius: 999px;
-
-      background: #f7edf2;
-
-      color: #702744;
-
-      font-size: 10px;
-
-      font-weight: 700;
-
-      white-space: nowrap;
-
-    }
-
-
-    /* =========================================================
-       DESIGN GRID
-       ONE COLUMN
-    ========================================================= */
-
-    .design-grid {
-
-      display: grid;
-
-      grid-template-columns:
-        1fr;
-
-      gap: 13px;
-
-    }
-
-
-    /* =========================================================
-       DESIGN CARD
-    ========================================================= */
-
-    .design-card {
-
-      background: white;
-
-      border:
-        2px
-        solid
-        #ead8e0;
-
-      border-radius: 16px;
-
-      overflow: hidden;
-
-      box-shadow:
-        0 6px 20px
-        rgba(
-          91,
-          23,
-          56,
-          0.07
-        );
-
-      transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease,
-        transform 0.2s ease;
-
-    }
-
-
-    /* =========================================================
-       SELECTED CARD
-    ========================================================= */
-
-    .design-card.selected {
-
-      border-color:
-        #8a3155;
-
-      box-shadow:
-        0 0 0 2px
-        rgba(
-          138,
-          49,
-          85,
-          0.18
-        ),
-        0 10px 28px
-        rgba(
-          91,
-          23,
-          56,
-          0.14
-        );
-
-    }
-
-
-    /* =========================================================
-       IMAGE
-    ========================================================= */
-
-    .design-image-wrapper {
-
-      width: 100%;
-
-      aspect-ratio:
-        1 / 1;
-
-      background: #faf4f6;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      overflow: hidden;
-
-      position: relative;
-
-    }
-
-
-    .design-image {
-
-      width: 100%;
-
-      height: 100%;
-
-      object-fit: cover;
-
-      display: block;
-
-      transition:
-        transform
-        0.3s
-        ease;
-
-    }
-
-
-    .design-card:hover
-    .design-image {
-
-      transform:
-        scale(1.02);
-
-    }
-
-
-    .image-missing {
-
-      font-size: 12px;
-
-      color: #9a858d;
-
-      text-align: center;
-
-      padding: 20px;
-
-    }
-
-
-    /* =========================================================
-       DESIGN INFO
-    ========================================================= */
-
-    .design-info {
-
-      padding:
-        10px
-        10px
-        11px;
-
-    }
-
-
-    .design-title {
-
-      font-size: 14px;
-
-      font-weight: 700;
-
-      color: #5b1738;
-
-      text-align: center;
-
-      margin-bottom: 9px;
-
-    }
-
-
-    /* =========================================================
-       BOTTOM ROW
-    ========================================================= */
-
-    .design-bottom {
-
-      display: grid;
-
-      grid-template-columns:
-        auto
-        1fr
-        auto;
-
-      align-items: center;
-
-      gap: 8px;
-
-    }
-
-
-    /* =========================================================
-       CHECKBOX
-    ========================================================= */
-
-    .select-label {
-
-      width: 40px;
-
-      height: 40px;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      border-radius: 9px;
-
-      background: #f8edf2;
-
-      border:
-        1px
-        solid
-        #ead5df;
-
-      cursor: pointer;
-
-      flex-shrink: 0;
-
-      -webkit-tap-highlight-color:
-        transparent;
-
-    }
-
-
-    .select-label input {
-
-      width: 21px;
-
-      height: 21px;
-
-      margin: 0;
-
-      accent-color:
-        #8a3155;
-
-      cursor: pointer;
-
-    }
-
-
-    /* =========================================================
-       PRICE
-    ========================================================= */
-
-    .design-price {
-
-      font-size: 16px;
-
-      font-weight: 800;
-
-      color: #8a3155;
-
-      background: #fff8fa;
-
-      border:
-        1px
-        solid
-        #ead5df;
-
-      border-radius: 9px;
-
-      padding:
-        7px
-        9px;
-
-      text-align: center;
-
-      min-width: 70px;
-
-      white-space: nowrap;
-
-    }
-
-
-    /* =========================================================
-       QUANTITY
-    ========================================================= */
-
-    .quantity-controls {
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      flex-shrink: 0;
-
-      border:
-        1px
-        solid
-        #ead5df;
-
-      border-radius: 9px;
-
-      overflow: hidden;
-
-      background: #fff9fb;
-
-      white-space: nowrap;
-
-    }
-
-
-    .quantity-btn {
-
-      width: 38px;
-
-      height: 40px;
-
-      border: none;
-
-      background: #f5e8ef;
-
-      color: #6f1d45;
-
-      font-size: 18px;
-
-      font-weight: 700;
-
-      cursor: pointer;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      -webkit-tap-highlight-color:
-        transparent;
-
-    }
-
-
-    .quantity-btn:hover {
-
-      background: #ead5df;
-
-    }
-
-
-    .quantity-value {
-
-      width: 38px;
-
-      text-align: center;
-
-      color: #5b1738;
-
-      font-size: 13px;
-
-      font-weight: 700;
-
-    }
-
-
-    /* =========================================================
-       SHIPPING
-    ========================================================= */
-
-    .shipping-note {
-
-      text-align: center;
-
-      margin:
-        17px
-        auto
-        0;
-
-      padding:
-        9px
-        10px;
-
-      color: #806b74;
-
-      font-size: 10px;
-
-      font-weight: 600;
-
-      line-height: 1.5;
-
-    }
-
-
-    /* =========================================================
-       FOOTER
-    ========================================================= */
-
-    .footer {
-
-      margin-top: 3px;
-
-      text-align: center;
-
-      font-size: 9px;
-
-      color: #9a858d;
-
-    }
-
-
-    .footer a {
-
-      color: #c02a6d;
-
-      text-decoration: none;
-
-      font-weight: 700;
-
-    }
-
-
-    /* =========================================================
-       FIXED BOTTOM CART
-    ========================================================= */
-
-    .bottom-cart {
-
-      position: fixed;
-
-      left: 0;
-      right: 0;
-      bottom: 0;
-
-      z-index: 1000;
-
-      background:
-        rgba(
-          255,
-          255,
-          255,
-          0.98
-        );
-
-      backdrop-filter:
-        blur(12px);
-
-      border-top:
-        1px
-        solid
-        #ead8e0;
-
-      box-shadow:
-        0 -7px 25px
-        rgba(
-          91,
-          23,
-          56,
-          0.14
-        );
-
-      padding:
-        8px
-        10px;
-
-    }
-
-
-    .bottom-inner {
-
-      max-width: 900px;
-
-      margin: auto;
-
-      display: grid;
-
-      grid-template-columns:
-        1fr
-        1.35fr;
-
-      gap: 7px;
-
-    }
-
-
-    .cart-button,
-    .place-btn {
-
-      min-height: 54px;
-
-      border-radius: 11px;
-
-      padding:
-        5px
-        9px;
-
-      font-weight: 700;
-
-      cursor: pointer;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      gap: 7px;
-
-      font-size: 13px;
-
-      -webkit-tap-highlight-color:
-        transparent;
-
-      transition:
-        transform 0.18s ease,
-        box-shadow 0.18s ease,
-        filter 0.18s ease;
-
-    }
-
-
-    /* =========================================================
-       CART BUTTON
-    ========================================================= */
-
-    .cart-button {
-
-      border:
-        1px
-        solid
-        #ead5df;
-
-      background: #f7edf2;
-
-      color: #5b1738;
-
-    }
-
-
-    .cart-button:hover {
-
-      transform:
-        translateY(-1px);
-
-      box-shadow:
-        0 5px 14px
-        rgba(
-          91,
-          23,
-          56,
-          0.12
-        );
-
-    }
-
-
-    /* Bigger cart emoji */
-
-    .cart-button:first-letter {
-
-      font-size: 24px;
-
-    }
-
-
-    .cart-total {
-
-      font-size: 15px;
-
-      font-weight: 800;
-
-    }
-
-
-    .cart-count {
-
-      font-size: 11px;
-
-    }
-
-
-    /* =========================================================
-       WHATSAPP PLACE ORDER BUTTON
-    ========================================================= */
-
-    .place-btn {
-
-      border:
-        1px
-        solid
-        #25D366;
-
-      background:
-        #25D366;
-
-      color: white;
-
-      font-size: 14px;
-
-      box-shadow:
-        0 5px 14px
-        rgba(
-          37,
-          211,
-          102,
-          0.20
-        );
-
-    }
-
-
-    .place-btn:hover {
-
-      transform:
-        translateY(-2px);
-
-      background:
-        #20bd5b;
-
-      box-shadow:
-        0 8px 20px
-        rgba(
-          37,
-          211,
-          102,
-          0.32
-        );
-
-    }
-
-
-    .place-btn:active {
-
-      transform:
-        translateY(0);
-
-    }
-
-
-    /* =========================================================
-       MODAL
-    ========================================================= */
-
-    .modal {
-
-      display: none;
-
-      position: fixed;
-
-      inset: 0;
-
-      background:
-        rgba(
-          40,
-          20,
-          30,
-          0.55
-        );
-
-      z-index: 2000;
-
-      padding:
-        10px;
-
-      align-items: flex-end;
-
-      justify-content: center;
-
-    }
-
-
-    .modal.show {
-
-      display: flex;
-
-    }
-
-
-    .modal-box {
-
-      width: 100%;
-
-      max-width: 600px;
-
-      max-height: 90vh;
-
-      overflow: auto;
-
-      background: white;
-
-      border-radius: 20px;
-
-      padding: 15px;
-
-      box-shadow:
-        0 20px 60px
-        rgba(
-          0,
-          0,
-          0,
-          0.25
-        );
-
-    }
-
-
-    /* =========================================================
-       MODAL HEADER
-    ========================================================= */
-
-    .modal-header {
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: space-between;
-
-      border-bottom:
-        1px
-        solid
-        #f0e1e7;
-
-      padding-bottom: 10px;
-
-    }
-
-
-    .modal-title {
-
-      margin: 0;
-
-      color: #5b1738;
-
-      font-size: 19px;
-
-    }
-
-
-    .close-modal {
-
-      border: 0;
-
-      background: #f7edf2;
-
-      color: #702744;
-
-      border-radius: 50%;
-
-      width: 36px;
-
-      height: 36px;
-
-      font-size: 22px;
-
-      cursor: pointer;
-
-    }
-
-
-    /* =========================================================
-       CART ITEMS
-    ========================================================= */
-
-    .order-items {
-
-      padding:
-        8px
-        0;
-
-    }
-
-
-    .order-item {
-
-      display: grid;
-
-      grid-template-columns:
-        58px
-        1fr
-        auto;
-
-      gap: 9px;
-
-      align-items: center;
-
-      padding:
-        9px
-        0;
-
-      border-bottom:
-        1px
-        solid
-        #f2e5ea;
-
-    }
-
-
-    .order-thumb {
-
-      width: 58px;
-
-      height: 58px;
-
-      object-fit: cover;
-
-      border-radius: 9px;
-
-      background: #faf4f6;
-
-    }
-
-
-    .item-name {
-
-      font-weight: 700;
-
-      color: #5b1738;
-
-      font-size: 13px;
-
-    }
-
-
-    .item-meta {
-
-      font-size: 10px;
-
-      color: #806b74;
-
-      margin-top: 4px;
-
-    }
-
-
-    .item-actions {
-
-      display: flex;
-
-      align-items: center;
-
-      gap: 4px;
-
-    }
-
-
-    .qty-btn {
-
-      width: 30px;
-
-      height: 30px;
-
-      border:
-        1px
-        solid
-        #ead5df;
-
-      background: #f8edf2;
-
-      border-radius: 7px;
-
-      cursor: pointer;
-
-      color: #702744;
-
-      font-weight: 700;
-
-    }
-
-
-    .qty-value {
-
-      min-width: 20px;
-
-      text-align: center;
-
-      font-size: 12px;
-
-    }
-
-
-    /* =========================================================
-       MODAL FOOTER
-    ========================================================= */
-
-    .modal-footer {
-
-      border-top:
-        1px
-        solid
-        #f0e1e7;
-
-      padding-top: 11px;
-
-    }
-
-
-    .summary-row {
-
-      display: flex;
-
-      justify-content: space-between;
-
-      gap: 10px;
-
-      font-weight: 700;
-
-      color: #5b1738;
-
-    }
-
-
-    .summary-total {
-
-      font-size: 18px;
-
-      color: #8a3155;
-
-    }
-
-
-    .modal-note {
-
-      text-align: center;
-
-      color: #806b74;
-
-      font-size: 10px;
-
-      margin:
-        8px
-        0
-        11px;
-
-    }
-
-
-    .modal-place-btn {
-
-      width: 100%;
-
-      min-height: 52px;
-
-      border:
-        1px
-        solid
-        #25D366;
-
-      border-radius: 10px;
-
-      background:
-        #25D366;
-
-      color: white;
-
-      font-weight: 700;
-
-      font-size: 14px;
-
-      cursor: pointer;
-
-      transition:
-        background 0.2s ease,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-
-    }
-
-
-    .modal-place-btn:hover {
-
-      background:
-        #20bd5b;
-
-      transform:
-        translateY(-1px);
-
-      box-shadow:
-        0 7px 17px
-        rgba(
-          37,
-          211,
-          102,
-          0.25
-        );
-
-    }
-
-
-    /* =========================================================
-       MOBILE
-    ========================================================= */
-
-    @media (max-width: 600px) {
-
-      body {
-
-        padding-bottom:
-          110px;
-
-      }
-
-
-      .page {
-
-        padding:
-          8px
-          8px
-          115px;
-
-      }
-
-
-      .card {
-
-        padding:
-          22px
-          12px;
-
-        border-radius:
-          18px;
-
-        margin-bottom:
-          12px;
-
-      }
-
-
-      .logo {
-
-        width: 95px;
-
-        height: 95px;
-
-      }
-
-
-      .brand-name {
-
-        font-size: 24px;
-
-      }
-
-
-      .tagline {
-
-        font-size: 12px;
-
-        margin-bottom:
-          11px;
-
-      }
-
-
-      .hero-message {
-
-        font-size: 12px;
-
-        margin:
-          10px
-          auto
-          13px;
-
-      }
-
-
-      .hero-title {
-
-        font-size: 16px;
-
-      }
-
-
-      .hero-subtitle {
-
-        font-size: 11px;
-
-      }
-
-
-      .btn {
-
-        min-height:
-          48px;
-
-        font-size:
-          13px;
-
-        width: 100%;
-
-        max-width: 310px;
-
-      }
-
-
-      .features {
-
-        gap: 5px;
-
-      }
-
-
-      .feature {
-
-        font-size:
-          9px;
-
-        padding:
-          6px
-          8px;
-
-      }
-
-
-      .design-grid {
-
-        grid-template-columns:
-          1fr;
-
-        gap:
-          10px;
-
-      }
-
-
-      .design-info {
-
-        padding:
-          9px;
-
-      }
-
-
-      .design-title {
-
-        font-size:
-          13px;
-
-      }
-
-
-      .design-bottom {
-
-        gap:
-          6px;
-
-      }
-
-
-      .select-label {
-
-        width:
-          38px;
-
-        height:
-          38px;
-
-      }
-
-
-      .select-label input {
-
-        width:
-          20px;
-
-        height:
-          20px;
-
-      }
-
-
-      .design-price {
-
-        font-size:
-          15px;
-
-        min-width:
-          66px;
-
-        padding:
-          7px
-          7px;
-
-      }
-
-
-      .quantity-btn {
-
-        width:
-          34px;
-
-        height:
-          38px;
-
-      }
-
-
-      .quantity-value {
-
-        width:
-          32px;
-
-      }
-
-
-      .cart-button,
-      .place-btn {
-
-        min-height:
-          52px;
-
-      }
-
-
-      .cart-button {
-
-        font-size:
-          13px;
-
-      }
-
-
-      .cart-total {
-
-        font-size:
-          14px;
-
-      }
-
-
-      .cart-count {
-
-        font-size:
-          10px;
-
-      }
-
-
-      .place-btn {
-
-        font-size:
-          14px;
-
-      }
-
-    }
-
-
-    /* =========================================================
-       VERY SMALL PHONES
-    ========================================================= */
-
-    @media (max-width: 380px) {
-
-      .page {
-
-        padding-left:
-          6px;
-
-        padding-right:
-          6px;
-
-      }
-
-
-      .card {
-
-        padding:
-          20px
-          9px;
-
-      }
-
-
-      .brand-name {
-
-        font-size:
-          22px;
-
-      }
-
-
-      .design-bottom {
-
-        grid-template-columns:
-          auto
-          1fr
-          auto;
-
-        gap:
-          4px;
-
-      }
-
-
-      .design-price {
-
-        font-size:
-          14px;
-
-        min-width:
-          60px;
-
-      }
-
-
-      .quantity-btn {
-
-        width:
-          30px;
-
-      }
-
-
-      .quantity-value {
-
-        width:
-          27px;
-
-      }
-
-
-      .select-label {
-
-        width:
-          34px;
-
-      }
-
-
-      .cart-button,
-      .place-btn {
-
-        padding-left:
-          5px;
-
-        padding-right:
-          5px;
-
-      }
-
-    }
-
-  </style>
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 
 <body>
 
+  <!-- ==========================================
+       HEADER / NAVIGATION
+       ========================================== -->
 
-  <main class="page">
+  <header class="site-header">
 
+    <div class="navbar">
 
-    <!-- =====================================================
-         HEADER
-    ===================================================== -->
-
-    <section class="card">
-
-
-      <img
-        src="logo.png"
-        alt="Preety Creations Logo"
-        class="logo"
-      >
+      <!-- Mobile Menu Button -->
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"
+        aria-controls="mobileMenu">
+        ☰
+      </button>
 
 
-      <h1 class="brand-name">
-        Preety Creations
-      </h1>
+      <!-- Brand -->
+      <a href="#home" class="brand" aria-label="Preety Creations Home">
 
+        <img src="logo.png" alt="Preety Creations logo" class="brand-logo">
 
-      <p class="tagline">
-        Handmade Jewellery • Made with Love • Made for You
-      </p>
+        <div class="brand-text">
 
+          <span class="brand-name">
+            Preety Creations
+          </span>
 
-      <!-- ===================================================
-           INTRO
-      =================================================== -->
+          <span class="brand-tagline">
+            Handmade Jewellery • Made with Love • Made for You
+          </span>
 
-      <div class="hero-message">
-
-        <div class="hero-title">
-          ✨ Find a piece that feels like you
         </div>
 
-        <p class="hero-subtitle">
+      </a>
+
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main navigation">
+
+        <a href="#home">
+          Home
+        </a>
+
+        <a href="#new-collection">
+          New Collection
+        </a>
+
+        <a href="#studs">
+          Studs Earrings
+        </a>
+
+        <a href="#jhumka">
+          Jhumka Earrings
+        </a>
+
+        <a href="#fancy">
+          Fancy Earrings
+        </a>
+
+        <a href="#party-wear">
+          Party Wear Earrings
+        </a>
+
+        <a href="#about">
+          About Me
+        </a>
+
+        <a href="#contact">
+          Let's Connect
+        </a>
+
+      </nav>
+
+
+
+
+    </div>
+
+
+    <!-- ==========================================
+         MOBILE MENU
+         ========================================== -->
+
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+
+      <a href="#home">
+        Home
+      </a>
+
+      <a href="#new-collection">
+        New Collection
+      </a>
+
+      <a href="#studs">
+        Studs Earrings
+      </a>
+
+      <a href="#jhumka">
+        Jhumka Earrings
+      </a>
+
+      <a href="#fancy">
+        Fancy Earrings
+      </a>
+
+      <a href="#party-wear">
+        Party Wear Earrings
+      </a>
+
+      <a href="#about">
+        About Me
+      </a>
+
+      <a href="#contact">
+        Let's Connect
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ==========================================
+       MAIN
+       ========================================== -->
+
+  <main>
+
+
+    <!-- ========================================
+         HOME
+         ======================================== -->
+
+    <section id="home" class="hero-section">
+
+      <div class="hero-content">
+
+        <img src="logo.png" alt="Preety Creations logo" class="hero-logo">
+
+        <h1>
+          Preety Creations
+        </h1>
+
+        <p class="hero-tagline">
+          Handmade Jewellery • Made with Love • Made for You
+        </p>
+
+        <h2 class="hero-main-heading">
+          ✨ Find a piece that feels like you
+        </h2>
+
+        <p class="hero-description">
           Select your favourites, choose the quantity and order directly on WhatsApp
         </p>
 
-      </div>
+        <div class="hero-buttons">
+
+          <a href="https://www.instagram.com/preetycreation24" target="_blank" rel="noopener noreferrer"
+            class="instagram-button">
+            <img src="instagram.png" alt="">
+            <span>
+              @preetycreation24
+            </span>
+          </a>
+
+          <div class="explore-collection-wrapper">
+
+            <button type="button" class="explore-button" id="exploreCollectionButton">
+              Explore Collection
+            </button>
+
+            <div class="explore-collection-menu" id="exploreCollectionMenu">
+
+              <a href="#new-collection">
+                ✨ New Collection
+              </a>
+
+              <a href="#studs">
+                ♡ Studs Earrings
+              </a>
+
+              <a href="#jhumka">
+                ✨ Jhumka Earrings
+              </a>
+
+              <a href="#fancy">
+                💕 Fancy Earrings
+              </a>
+
+              <a href="#party-wear">
+                💝 Party Wear Earrings
+              </a>
+
+            </div>
+
+          </div>
 
 
-      <!-- ===================================================
-           INSTAGRAM
-      =================================================== -->
 
-      <div class="actions">
-
-        <a
-          class="btn instagram-btn"
-          href="https://www.instagram.com/preetycreation24"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-
-          <img
-            src="instagram.png"
-            alt="Instagram"
-          >
-
-          @preetycreation24
-
-        </a>
-
-      </div>
-
-
-      <!-- ===================================================
-           FEATURES
-      =================================================== -->
-
-      <div class="features">
-
-        <span class="feature">
-          ♡ Handmade
-        </span>
-
-        <span class="feature">
-          🎨 Custom Colors
-        </span>
-
-        <span class="feature">
-          ✨ Unique Designs
-        </span>
-
-        <span class="feature">
-          💝 Affordable
-        </span>
+        </div>
 
       </div>
-
 
     </section>
 
 
-    <!-- =====================================================
-         DESIGN GRID
-    ===================================================== -->
+    <!-- ========================================
+         FEATURES
+         ======================================== -->
 
-    <div
-      class="design-grid"
-      id="designGrid"
-    ></div>
+    <section class="features-section">
+
+      <div class="features-container">
+
+        <div class="feature-pill">
+          ♡ Handmade
+        </div>
+
+        <div class="feature-pill">
+          🎨 Custom Colors
+        </div>
+
+        <div class="feature-pill">
+          ✨ Unique Designs
+        </div>
+
+        <div class="feature-pill">
+          💝 Affordable
+        </div>
+
+      </div>
+
+    </section>
 
 
-    <div class="shipping-note">
+    <section id="featured" class="product-section">
+      <div class="section-heading">
+        <h3> Featured Designs</h3>
+      </div>
 
-      Shipping charges may apply depending on location.
-      Final details will be confirmed on WhatsApp.
+      <div class="product-grid" id="featuredGrid"></div>
+    </section>
 
-    </div>
+    <!-- ========================================
+         NEW COLLECTION
+         ======================================== -->
+
+    <section id="new-collection" class="product-section">
+
+      <div class="section-container">
+
+        <div class="section-heading">
+
+          <p class="section-kicker">
+            ✨ Fresh Arrivals
+          </p>
+
+          <h2>
+            New Collection
+          </h2>
+
+          <p>
+            Explore the latest handmade designs.
+          </p>
+
+        </div>
 
 
-    <div class="footer">
+        <div class="product-grid" id="newCollectionGrid">
+          <!-- Products loaded by products.js -->
+        </div>
 
-      © Preety Creations • Handmade with love
+      </div>
 
-    </div>
+    </section>
 
+
+    <!-- ========================================
+         STUDS EARRINGS
+         ======================================== -->
+
+    <section id="studs" class="product-section">
+
+      <div class="section-container">
+
+        <div class="section-heading">
+
+          <p class="section-kicker">
+            ♡ Everyday Elegance
+          </p>
+
+          <h2>
+            Studs Earrings
+          </h2>
+
+          <p>
+            Simple and beautiful designs for
+            everyday wear.
+          </p>
+
+        </div>
+
+
+        <div class="product-grid" id="studsGrid">
+          <!-- Products loaded by products.js -->
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         JHUMKA EARRINGS
+         ======================================== -->
+
+    <section id="jhumka" class="product-section">
+
+      <div class="section-container">
+
+        <div class="section-heading">
+
+          <p class="section-kicker">
+            ✨ Traditional Charm
+          </p>
+
+          <h2>
+            Jhumka Earrings
+          </h2>
+
+          <p>
+            Beautiful jhumkas with a traditional
+            touch.
+          </p>
+
+        </div>
+
+
+        <div class="product-grid" id="jhumkaGrid">
+          <!-- Products loaded by products.js -->
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         FANCY EARRINGS
+         ======================================== -->
+
+    <section id="fancy" class="product-section">
+
+      <div class="section-container">
+
+        <div class="section-heading">
+
+          <p class="section-kicker">
+            💕 Statement Styles
+          </p>
+
+          <h2>
+            Fancy Earrings
+          </h2>
+
+          <p>
+            Unique designs to make your look
+            stand out.
+          </p>
+
+        </div>
+
+
+        <div class="product-grid" id="fancyGrid">
+          <!-- Products loaded by products.js -->
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         PARTY WEAR EARRINGS
+         ======================================== -->
+
+    <section id="party-wear" class="product-section">
+
+      <div class="section-container">
+
+        <div class="section-heading">
+
+          <p class="section-kicker">
+            💝 Special Occasions
+          </p>
+
+          <h2>
+            Party Wear Earrings
+          </h2>
+
+          <p>
+            Eye-catching earrings for parties
+            and special occasions.
+          </p>
+
+        </div>
+
+
+        <div class="product-grid" id="partyWearGrid">
+          <!-- Products loaded by products.js -->
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         ABOUT ME
+         ======================================== -->
+
+    <section id="about" class="about-section">
+
+      <div class="about-container">
+
+        <div class="about-image-wrapper">
+
+          <img src="preetycreationsAboutMeImage.jpeg" alt="Preeti - creator behind Preety Creations"
+            class="about-image">
+
+        </div>
+
+
+        <div class="about-content">
+
+          <h2>
+            About Me
+          </h2>
+
+          <p>
+            Hi, I’m Preeti, the creator behind
+            <strong>PreetyCreation24</strong>, based in Pune.
+          </p>
+
+          <p>
+            My journey started with a love for creativity and jewellery,
+            which inspired me to create beautiful and unique pieces for
+            women who love to express their style.
+          </p>
+
+          <p>
+            At PreetyCreation24, we create a variety of trendy and stylish
+            earrings that are perfect for everyday wear as well as special
+            occasions. We also offer customised jewellery, so you can share
+            your idea, colour, design or style with us and we’ll try to turn
+            your vision into something beautiful.
+          </p>
+
+          <p>
+            For us, every piece is more than just jewellery — it’s a small
+            creation made with love, creativity and attention to detail.
+          </p>
+
+          <div class="about-message">
+            <p>
+              “The love and support you have given me until now has been my
+              biggest motivation. I sincerely thank each and every customer
+              who has supported PreetyCreation24. I hope you continue to
+              shower the same love and support on our journey ahead, from
+              Pune and beyond.” ✨
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================
+         LET'S CONNECT
+         ======================================== -->
+
+    <section id="contact" class="contact-section">
+
+      <div class="contact-container">
+
+        <p class="section-kicker">
+          💌 Have a Question?
+        </p>
+
+        <h2>
+          Let's Connect
+        </h2>
+
+        <p class="contact-description">
+          Want to know more about a design,
+          customize something or place an order?
+          Feel free to connect with me.
+        </p>
+
+
+        <div class="contact-buttons">
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/preetycreation24" target="_blank" rel="noopener noreferrer"
+            class="instagram-button">
+
+            <img src="instagram.png" alt="">
+
+            <span>
+              @preetycreation24
+            </span>
+
+          </a>
+
+
+          <!-- WhatsApp -->
+          <button type="button" id="contactWhatsAppButton" class="whatsapp-button">
+            💬 Chat on WhatsApp
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
 
   </main>
 
 
-  <!-- =======================================================
-       FIXED BOTTOM CART
-  ======================================================= -->
+  <!-- ==========================================
+       FIXED CART BAR
+       ========================================== -->
 
-  <div class="bottom-cart">
+  <div class="cart-bar" id="cartBar">
 
-    <div class="bottom-inner">
+    <button type="button" class="cart-summary-button" id="cartSummaryButton">
 
+      <span class="cart-icon">
+        🛒
+      </span>
 
-      <button
-        class="cart-button"
-        onclick="openCart()"
-      >
+      <span class="cart-summary-text">
 
-        <span
-          style="
-            font-size:24px;
-            line-height:1;
-          "
-        >
-          🛒
+        <strong>
+          My Cart
+        </strong>
+
+        <span id="cartText">
+          Your cart is empty
         </span>
 
-        <span
-          class="cart-count"
-          id="cartCount"
-        >
-          0 items
-        </span>
+      </span>
 
-        <span
-          class="cart-total"
-          id="cartTotal"
-        >
-          ₹0
-        </span>
+      <span class="cart-count" id="cartCount">
+        0
+      </span>
 
-      </button>
+    </button>
 
 
-      <button
-        class="place-btn"
-        onclick="placeOrder()"
-      >
-
-        Place Order
-
-      </button>
-
-
-    </div>
+    <button type="button" class="place-order-button" id="placeOrderButton">
+      Place Order
+    </button>
 
   </div>
 
 
-  <!-- =======================================================
+  <!-- ==========================================
        CART MODAL
-  ======================================================= -->
+       ========================================== -->
 
-  <div
-    class="modal"
-    id="orderModal"
-  >
+  <div class="cart-modal-overlay" id="cartModalOverlay" aria-hidden="true">
 
-    <div class="modal-box">
+    <div class="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle">
 
+      <!-- Modal Header -->
+      <div class="cart-modal-header">
 
-      <div class="modal-header">
-
-        <h2 class="modal-title">
-          Your Cart
+        <h2 id="cartModalTitle">
+          My Cart
         </h2>
 
-
-        <button
-          class="close-modal"
-          onclick="closeCart()"
-        >
+        <button type="button" class="close-cart-button" id="closeCartButton" aria-label="Close cart">
           ×
         </button>
 
       </div>
 
 
-      <div
-        class="order-items"
-        id="orderItems"
-      ></div>
+      <!-- Cart Items -->
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items added by cart.js -->
+      </div>
 
 
-      <div class="modal-footer">
+      <!-- Empty Cart -->
+      <div class="cart-empty-state" id="cartEmptyState">
+
+        <div class="cart-empty-icon">
+          🛒
+        </div>
+
+        <h3>
+          Your cart is empty
+        </h3>
+
+        <p>
+          Select your favourite designs
+          to add them to your cart.
+        </p>
+
+        <button type="button" class="empty-cart-explore" id="emptyCartExplore">
+          Explore Collection
+        </button>
+
+      </div>
 
 
-        <div class="summary-row">
+      <!-- Cart Footer -->
+      <div class="cart-modal-footer">
+
+        <div class="cart-total-row">
 
           <span>
             Total Order Value
           </span>
 
-          <span
-            class="summary-total"
-            id="modalTotal"
-          >
+          <strong id="cartTotal">
             ₹0
-          </span>
+          </strong>
 
         </div>
 
-
-        <div class="modal-note">
-
-          Shipping charges may apply.
+        <div class="cart-shipping-note">
+          Shipping charges may apply depending on location.
           Final details will be confirmed on WhatsApp.
-
         </div>
 
-
-        <button
-          class="modal-place-btn"
-          onclick="placeOrder()"
-        >
-
+        <button type="button" class="modal-order-button" id="modalOrderButton">
           Place Order on WhatsApp
-
         </button>
 
-
       </div>
-
 
     </div>
 
   </div>
 
 
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+
+  <footer class="site-footer">
+
+    <p>
+      © Preety Creations • Handmade with love
+    </p>
+
+  </footer>
+
+
+  <!-- ==========================================
+       MOBILE MENU SCRIPT
+       ========================================== -->
+
   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      const menuToggle =
+        document.getElementById("menuToggle");
+
+      const mobileMenu =
+        document.getElementById("mobileMenu");
 
 
-    /* =========================================================
-       DATA
-    ========================================================= */
-
-    let designs = [];
-
-    const cart = {};
-
-
-    /* =========================================================
-       LOAD JSON
-    ========================================================= */
-
-    async function loadDesigns() {
-
-      try {
-
-        const response =
-          await fetch(
-            "designs.json",
-            {
-              cache: "no-store"
-            }
-          );
-
-
-        if (!response.ok) {
-
-          throw new Error(
-            "Unable to load designs.json"
-          );
-
-        }
-
-
-        const data =
-          await response.json();
-
-
-        if (!Array.isArray(data)) {
-
-          throw new Error(
-            "designs.json must contain an array."
-          );
-
-        }
-
-
-        designs =
-          data.map(
-            (item, index) => ({
-
-              id:
-                index + 1,
-
-              name:
-                String(
-                  item.design ||
-                  `Design${index + 1}`
-                ),
-
-              image:
-                String(
-                  item.image ||
-                  ""
-                ),
-
-              price:
-                Number(
-                  item.price ||
-                  0
-                )
-
-            })
-          );
-
-
-        renderDesigns();
-
-        updateCart();
-
+      if (!menuToggle || !mobileMenu) {
+        return;
       }
 
 
-      catch (error) {
+      // Open / close mobile menu
+      menuToggle.addEventListener(
+        "click",
+        () => {
 
-        console.error(error);
-
-
-        document
-          .getElementById(
-            "designGrid"
-          )
-          .innerHTML = `
-
-            <div
-              style="
-                grid-column:1/-1;
-                padding:25px;
-                text-align:center;
-                background:#fff;
-                border-radius:16px;
-                color:#8b5268;
-              "
-            >
-
-              <strong>
-                Unable to load designs.
-              </strong>
-
-              <br><br>
-
-              Make sure
-              <b>designs.json</b>
-              is in the same folder as this HTML.
-
-            </div>
-
-          `;
-
-      }
-
-    }
+          const isOpen =
+            mobileMenu.classList.toggle("open");
 
 
-    /* =========================================================
-       PRICE FORMAT
-    ========================================================= */
+          menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+          );
 
-    function money(value) {
 
-      return (
-        "₹" +
-        Number(
-          value || 0
-        ).toLocaleString(
-          "en-IN"
-        )
+          menuToggle.setAttribute(
+            "aria-label",
+            isOpen
+              ? "Close menu"
+              : "Open menu"
+          );
+
+        }
       );
 
-    }
+
+      // Close menu after clicking a link
+      const mobileLinks =
+        mobileMenu.querySelectorAll("a");
 
 
-    /* =========================================================
-       IMAGE PATH
-    ========================================================= */
+      mobileLinks.forEach((link) => {
 
-    function imagePath(filename) {
+        link.addEventListener(
+          "click",
+          () => {
 
-      return (
-        "Images/" +
-        encodeURIComponent(
-          filename
-        )
-      );
-
-    }
-
-
-    /* =========================================================
-       RENDER DESIGNS
-    ========================================================= */
-
-    function renderDesigns() {
-
-
-      const grid =
-        document.getElementById(
-          "designGrid"
-        );
-
-
-      grid.innerHTML = "";
-
-
-      designs.forEach(
-        design => {
-
-
-          const card =
-            document.createElement(
-              "div"
+            mobileMenu.classList.remove(
+              "open"
             );
 
 
-          card.className =
-            "design-card";
+            menuToggle.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+
+
+            menuToggle.setAttribute(
+              "aria-label",
+              "Open menu"
+            );
+
+          }
+        );
+
+      });
+
+
+      // Close menu if user clicks outside it
+      document.addEventListener(
+        "click",
+        (event) => {
+
+          const clickedInsideMenu =
+            mobileMenu.contains(
+              event.target
+            );
+
+          const clickedToggle =
+            menuToggle.contains(
+              event.target
+            );
 
 
           if (
-            cart[
-              design.id
-            ] > 0
+            !clickedInsideMenu &&
+            !clickedToggle
           ) {
 
-            card.classList.add(
-              "selected"
+            mobileMenu.classList.remove(
+              "open"
+            );
+
+
+            menuToggle.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+
+
+            menuToggle.setAttribute(
+              "aria-label",
+              "Open menu"
             );
 
           }
 
-
-          /* IMAGE */
-
-          const wrapper =
-            document.createElement(
-              "div"
-            );
-
-
-          wrapper.className =
-            "design-image-wrapper";
-
-
-          const img =
-            document.createElement(
-              "img"
-            );
-
-
-          img.className =
-            "design-image";
-
-
-          img.alt =
-            design.name;
-
-
-          img.loading =
-            "lazy";
-
-
-          img.src =
-            imagePath(
-              design.image
-            );
-
-
-          img.onerror =
-            function () {
-
-              img.style.display =
-                "none";
-
-              wrapper.classList.add(
-                "image-missing"
-              );
-
-              wrapper.innerHTML =
-                "<span>Image unavailable</span>";
-
-            };
-
-
-          wrapper.appendChild(
-            img
-          );
-
-
-          /* INFO */
-
-          const info =
-            document.createElement(
-              "div"
-            );
-
-
-          info.className =
-            "design-info";
-
-
-          /* TITLE */
-
-          const title =
-            document.createElement(
-              "div"
-            );
-
-
-          title.className =
-            "design-title";
-
-
-          title.textContent =
-            design.name;
-
-
-          /* BOTTOM */
-
-          const bottom =
-            document.createElement(
-              "div"
-            );
-
-
-          bottom.className =
-            "design-bottom";
-
-
-          /* CHECKBOX */
-
-          const label =
-            document.createElement(
-              "label"
-            );
-
-
-          label.className =
-            "select-label";
-
-
-          label.title =
-            "Select item";
-
-
-          const checkbox =
-            document.createElement(
-              "input"
-            );
-
-
-          checkbox.type =
-            "checkbox";
-
-
-          checkbox.checked =
-            !!cart[
-              design.id
-            ];
-
-
-          checkbox.addEventListener(
-            "change",
-            function () {
-
-              if (
-                this.checked
-              ) {
-
-                cart[
-                  design.id
-                ] =
-                  cart[
-                    design.id
-                  ] ||
-                  1;
-
-
-                card.classList.add(
-                  "selected"
-                );
-
-              }
-              else {
-
-                delete cart[
-                  design.id
-                ];
-
-
-                card.classList.remove(
-                  "selected"
-                );
-
-              }
-
-
-              quantityValue.textContent =
-                cart[
-                  design.id
-                ] || 0;
-
-
-              updateCart();
-
-            }
-          );
-
-
-          label.appendChild(
-            checkbox
-          );
-
-
-          /* PRICE */
-
-          const price =
-            document.createElement(
-              "div"
-            );
-
-
-          price.className =
-            "design-price";
-
-
-          price.textContent =
-            design.price > 0
-              ? money(
-                  design.price
-                )
-              : "Price not set";
-
-
-          /* QUANTITY */
-
-          const quantityControls =
-            document.createElement(
-              "div"
-            );
-
-
-          quantityControls.className =
-            "quantity-controls";
-
-
-          const minus =
-            document.createElement(
-              "button"
-            );
-
-
-          minus.type =
-            "button";
-
-
-          minus.className =
-            "quantity-btn";
-
-
-          minus.textContent =
-            "−";
-
-
-          const quantityValue =
-            document.createElement(
-              "span"
-            );
-
-
-          quantityValue.className =
-            "quantity-value";
-
-
-          quantityValue.textContent =
-            cart[
-              design.id
-            ] || 0;
-
-
-          const plus =
-            document.createElement(
-              "button"
-            );
-
-
-          plus.type =
-            "button";
-
-
-          plus.className =
-            "quantity-btn";
-
-
-          plus.textContent =
-            "+";
-
-
-          minus.onclick =
-            function () {
-
-              let quantity =
-                cart[
-                  design.id
-                ] || 0;
-
-
-              if (
-                quantity > 1
-              ) {
-
-                cart[
-                  design.id
-                ] =
-                  quantity - 1;
-
-              }
-              else {
-
-                delete cart[
-                  design.id
-                ];
-
-                checkbox.checked =
-                  false;
-
-                card.classList.remove(
-                  "selected"
-                );
-
-              }
-
-
-              quantityValue.textContent =
-                cart[
-                  design.id
-                ] || 0;
-
-
-              updateCart();
-
-            };
-
-
-          plus.onclick =
-            function () {
-
-              let quantity =
-                cart[
-                  design.id
-                ] || 0;
-
-
-              cart[
-                design.id
-              ] =
-                quantity + 1;
-
-
-              checkbox.checked =
-                true;
-
-
-              card.classList.add(
-                "selected"
-              );
-
-
-              quantityValue.textContent =
-                cart[
-                  design.id
-                ];
-
-
-              updateCart();
-
-            };
-
-
-          quantityControls.append(
-            minus,
-            quantityValue,
-            plus
-          );
-
-
-          bottom.append(
-            label,
-            price,
-            quantityControls
-          );
-
-
-          info.append(
-            title,
-            bottom
-          );
-
-
-          card.append(
-            wrapper,
-            info
-          );
-
-
-          grid.appendChild(
-            card
-          );
-
         }
       );
 
-    }
+    });
 
+    // =========================================================
+    // EXPLORE COLLECTION MENU
+    // =========================================================
 
-    /* =========================================================
-       CART ITEMS
-    ========================================================= */
-
-    function getCartItems() {
-
-      return designs.filter(
-        design =>
-          cart[
-            design.id
-          ] > 0
+    const exploreCollectionButton =
+      document.getElementById(
+        "exploreCollectionButton"
       );
 
-    }
-
-
-    /* =========================================================
-       CART TOTAL
-    ========================================================= */
-
-    function getCartTotal() {
-
-      return getCartItems()
-        .reduce(
-          (
-            total,
-            design
-          ) =>
-
-            total +
-            (
-              design.price *
-              cart[
-                design.id
-              ]
-            ),
-
-          0
-        );
-
-    }
-
-
-    /* =========================================================
-       CART COUNT
-    ========================================================= */
-
-    function getCartCount() {
-
-      return getCartItems()
-        .reduce(
-          (
-            total,
-            design
-          ) =>
-
-            total +
-            cart[
-              design.id
-            ],
-
-          0
-        );
-
-    }
-
-
-    /* =========================================================
-       UPDATE CART
-    ========================================================= */
-
-    function updateCart() {
-
-
-      const count =
-        getCartCount();
-
-
-      document
-        .getElementById(
-          "cartCount"
-        )
-        .textContent =
-
-        `${count} item${
-          count === 1
-            ? ""
-            : "s"
-        }`;
-
-
-      document
-        .getElementById(
-          "cartTotal"
-        )
-        .textContent =
-        money(
-          getCartTotal()
-        );
-
-
-      document
-        .getElementById(
-          "modalTotal"
-        )
-        .textContent =
-        money(
-          getCartTotal()
-        );
-
-    }
-
-
-    /* =========================================================
-       OPEN CART
-    ========================================================= */
-
-    function openCart() {
-
-      renderCart();
-
-
-      document
-        .getElementById(
-          "orderModal"
-        )
-        .classList.add(
-          "show"
-        );
-
-    }
-
-
-    /* =========================================================
-       CLOSE CART
-    ========================================================= */
-
-    function closeCart() {
-
-      document
-        .getElementById(
-          "orderModal"
-        )
-        .classList.remove(
-          "show"
-        );
-
-    }
-
-
-    /* =========================================================
-       RENDER CART
-    ========================================================= */
-
-    function renderCart() {
-
-
-      const container =
-        document.getElementById(
-          "orderItems"
-        );
-
-
-      const items =
-        getCartItems();
-
-
-      if (
-        items.length === 0
-      ) {
-
-        container.innerHTML = `
-
-          <div
-            style="
-              text-align:center;
-              padding:30px;
-              color:#806b74;
-            "
-          >
-
-            Your cart is empty.
-
-            <br><br>
-
-            Select a jewellery design
-            to start your order.
-
-          </div>
-
-        `;
-
-
-        document
-          .getElementById(
-            "modalTotal"
-          )
-          .textContent =
-          "₹0";
-
-
-        return;
-
-      }
-
-
-      container.innerHTML =
-        "";
-
-
-      items.forEach(
-        design => {
-
-
-          const row =
-            document.createElement(
-              "div"
-            );
-
-
-          row.className =
-            "order-item";
-
-
-          const img =
-            document.createElement(
-              "img"
-            );
-
-
-          img.className =
-            "order-thumb";
-
-
-          img.src =
-            imagePath(
-              design.image
-            );
-
-
-          img.alt =
-            design.name;
-
-
-          img.onerror =
-            function () {
-
-              img.style.visibility =
-                "hidden";
-
-            };
-
-
-          const info =
-            document.createElement(
-              "div"
-            );
-
-
-          const name =
-            document.createElement(
-              "div"
-            );
-
-
-          name.className =
-            "item-name";
-
-
-          name.textContent =
-            design.name;
-
-
-          const meta =
-            document.createElement(
-              "div"
-            );
-
-
-          meta.className =
-            "item-meta";
-
-
-          meta.textContent =
-
-            `${money(
-              design.price
-            )} each • Qty ${
-              cart[
-                design.id
-              ]
-            }`;
-
-
-          info.append(
-            name,
-            meta
-          );
-
-
-          const actions =
-            document.createElement(
-              "div"
-            );
-
-
-          actions.className =
-            "item-actions";
-
-
-          const minus =
-            document.createElement(
-              "button"
-            );
-
-
-          minus.className =
-            "qty-btn";
-
-
-          minus.textContent =
-            "−";
-
-
-          minus.onclick =
-            function () {
-
-              changeQty(
-                design.id,
-                -1
-              );
-
-            };
-
-
-          const quantity =
-            document.createElement(
-              "span"
-            );
-
-
-          quantity.className =
-            "qty-value";
-
-
-          quantity.textContent =
-            cart[
-              design.id
-            ];
-
-
-          const plus =
-            document.createElement(
-              "button"
-            );
-
-
-          plus.className =
-            "qty-btn";
-
-
-          plus.textContent =
-            "+";
-
-
-          plus.onclick =
-            function () {
-
-              changeQty(
-                design.id,
-                1
-              );
-
-            };
-
-
-          actions.append(
-            minus,
-            quantity,
-            plus
-          );
-
-
-          row.append(
-            img,
-            info,
-            actions
-          );
-
-
-          container.appendChild(
-            row
-          );
-
-        }
+    const exploreCollectionMenu =
+      document.getElementById(
+        "exploreCollectionMenu"
       );
 
-
-      document
-        .getElementById(
-          "modalTotal"
-        )
-        .textContent =
-        money(
-          getCartTotal()
-        );
-
-    }
-
-
-    /* =========================================================
-       CHANGE CART QUANTITY
-    ========================================================= */
-
-    function changeQty(
-      id,
-      delta
+    if (
+      exploreCollectionButton &&
+      exploreCollectionMenu
     ) {
 
+      // Open / close collection menu
+      exploreCollectionButton.addEventListener(
+        "click",
+        (event) => {
 
-      cart[id] =
-        (
-          cart[id] ||
-          0
-        ) + delta;
+          event.stopPropagation();
 
-
-      if (
-        cart[id] <= 0
-      ) {
-
-        delete cart[id];
-
-      }
-
-
-      renderCart();
-
-      updateCart();
-
-      renderDesigns();
-
-    }
-
-
-    /* =========================================================
-       PLACE ORDER
-    ========================================================= */
-
-    function placeOrder() {
-
-
-      const items =
-        getCartItems();
-
-
-      if (
-        items.length === 0
-      ) {
-
-        alert(
-          "Please select at least one jewellery design before placing your order."
-        );
-
-        return;
-
-      }
-
-
-      let message =
-        "Hi @PreetyCreations 👋\n\n";
-
-
-      message +=
-        "I would like to place an order for these handmade jewellery designs:\n\n";
-
-
-      items.forEach(
-        design => {
-
-
-          const quantity =
-            cart[
-              design.id
-            ];
-
-
-          const subtotal =
-            design.price *
-            quantity;
-
-
-          message +=
-            `${design.name}\n`;
-
-
-          message +=
-            `Quantity: ${quantity}\n`;
-
-
-          message +=
-            `Price: ${
-              money(
-                design.price
-              )
-            } each\n`;
-
-
-          message +=
-            `Subtotal: ${
-              money(
-                subtotal
-              )
-            }\n\n`;
+          exploreCollectionMenu.classList.toggle(
+            "open"
+          );
 
         }
       );
 
 
-      message +=
-        `Total Order Value: ${
-          money(
-            getCartTotal()
-          )
-        }\n\n`;
+      // Close menu after selecting a collection
+      exploreCollectionMenu
+        .querySelectorAll("a")
+        .forEach((link) => {
+
+          link.addEventListener(
+            "click",
+            () => {
+
+              exploreCollectionMenu.classList.remove(
+                "open"
+              );
+
+            }
+          );
+
+        });
 
 
-      message +=
-        "Please confirm availability, customization options and final shipping charges. Thank you! ✨";
-
-
-      const whatsappNumber =
-        "919373086763";
-
-
-      const whatsappURL =
-        "https://wa.me/" +
-        whatsappNumber +
-        "?text=" +
-        encodeURIComponent(
-          message
-        );
-
-
-      window.open(
-        whatsappURL,
-        "_blank"
-      );
-
-    }
-
-
-    /* =========================================================
-       CLOSE MODAL OUTSIDE CLICK
-    ========================================================= */
-
-    document
-      .getElementById(
-        "orderModal"
-      )
-      .addEventListener(
+      // Close when clicking outside
+      document.addEventListener(
         "click",
-        function(event) {
+        (event) => {
 
           if (
-            event.target ===
-            this
+            !exploreCollectionMenu.contains(
+              event.target
+            ) &&
+            event.target !==
+            exploreCollectionButton
           ) {
 
-            closeCart();
+            exploreCollectionMenu.classList.remove(
+              "open"
+            );
 
           }
 
         }
       );
 
-
-    /* =========================================================
-       LOAD WEBSITE
-    ========================================================= */
-
-    loadDesigns();
+    }
 
 
   </script>
+
+
+
+
+  <!-- ==========================================
+       JAVASCRIPT FILES
+       ========================================== -->
+
+  <script src="js/products.js"></script>
+
+  <script src="js/cart.js"></script>
 
 
 </body>
