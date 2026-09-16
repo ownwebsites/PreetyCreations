@@ -6,12 +6,6 @@
     "enabled": true
   },
   "assets": {
-    "directory": ".",
-    "exclude": [
-      ".git/**",
-      ".github/**",
-      "wrangler.jsonc",
-      "wrangler.toml"
-    ]
+    "directory": "."
   }
 }
